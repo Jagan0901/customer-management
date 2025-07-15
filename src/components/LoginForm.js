@@ -28,9 +28,12 @@ export const LoginForm = () => {
     });
     setLoading(false);
 
-    if (response.ok) router.push("/dashboard");
+    if (response.ok) {
+      router.push("/dashboard");
+    }
     else setError(response.error);
   };
+
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="w-full max-w-sm p-8 bg-white rounded-2xl shadow-lg">
