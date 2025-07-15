@@ -12,6 +12,11 @@ export const LoginForm = () => {
 
   const router = useRouter();
 
+  const handleUserCredential = ()=>{
+    setEmail("john@mail.com");
+    setPassword("Password@123");
+  }
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
@@ -105,6 +110,12 @@ export const LoginForm = () => {
             )}
           </button>
         </form>
+        <button
+          className={`w-full mt-2 px-4 py-2 text-white rounded-xl transition-colors bg-purple-600 cursor-pointer hover:bg-purple-700`}
+          onClick={handleUserCredential}
+        >
+          User Credential
+        </button>
         {error ? (
           <p className="text-red-800 font-bold my-1 text-center">{error}</p>
         ) : (
