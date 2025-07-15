@@ -1,31 +1,3 @@
-// "use client";
-// import { useEffect, useState } from "react";
-// import { Table } from "./Table";
-
-// export const CustomerList = () => {
-//     const [customers, setCustomers] = useState([]);
-
-//     useEffect(() => {
-//       fetch("/api/customers")
-//         .then((res) => res.json())
-//         .then((data) => {
-//           const formatted = data.map((c) => ({
-//             name: c.name,
-//             amount: 0, // Placeholder until invoices are added
-//             status: "Pending",
-//             due: "N/A",
-//           }));
-//           setCustomers(formatted);
-//         });
-//     }, []);
-//   return (
-//     <div className="p-5">
-//       <p className="text-2xl">Customers</p>
-//       <Table data={customers} />
-//     </div>
-//   );
-// }
-
 "use client";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";

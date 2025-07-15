@@ -1,24 +1,3 @@
-
-
-// export const DashboardView = () => {
-//   return (
-//     <div className="p-5 flex justify-between">
-//       <div className="border-2 border-gray-200 py-5 ps-2 h-30 w-50 rounded">
-//         <p className="text-1xl">Total Customers</p>
-//         <p className="text-2xl mt-1">120</p>
-//       </div>
-//       <div className="border-2 border-gray-200 py-5 ps-2 h-30 w-50 rounded">
-//         <p className="text-1xl">Outstanding Invoices</p>
-//         <p className="text-2xl mt-1">5</p>
-//       </div>
-//       <div className="border-2 border-gray-200 py-5 ps-2 h-30 w-50 rounded">
-//         <p className="text-1xl">Revenue</p>
-//         <p className="text-2xl mt-1">120</p>
-//       </div>
-//     </div>
-//   );
-// }
-
 "use client";
 import { useEffect, useState } from "react";
 
